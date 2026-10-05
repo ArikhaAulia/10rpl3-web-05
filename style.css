@@ -1,0 +1,141 @@
+/* ===== TAMPILAN DASAR ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f6;
+    color: #5c4050;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== JUDUL ===== */
+h1 {
+    text-align: center;
+    color: #ff5c9d;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #ff6fa8;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(255, 92, 157, 0.2);
+}
+
+/* ===== NAVIGASI ===== */
+nav {
+    background: #ff8fbd;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff0f6;
+}
+
+/* ===== TABEL ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+th {
+    background: #ff8fbd;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ffd6e7;
+}
+
+tr:hover {
+    background: #fff0f6;
+}
+
+/* ===== FORM ===== */
+form {
+    background: #fff7fa;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #8b4565;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ffc1d9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Saat kotak diklik */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff5c9d;
+    box-shadow: 0 0 5px #ffc1d9;
+}
+
+/* ===== TOMBOL ===== */
+button {
+    background: #ff6fa8;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ff5c9d;
+    transform: scale(1.05);
+}
+
+/* ===== GAMBAR ===== */
+img {
+    max-width: 100%;
+    border-radius: 15px;
+    display: block;
+    margin: 15px auto;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    background: #ff8fbd;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
