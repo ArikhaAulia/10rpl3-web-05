@@ -1,141 +1,173 @@
-/* ===== TAMPILAN DASAR ===== */
-body {
-    font-family: Arial, sans-serif;
-    background: #fff0f6;
-    color: #5c4050;
+* {
     margin: 0;
     padding: 0;
-}
-
-/* ===== JUDUL ===== */
-h1 {
-    text-align: center;
-    color: #ff5c9d;
-    margin-top: 30px;
-}
-
-h2 {
-    color: #ff6fa8;
-}
-
-/* ===== CONTAINER ===== */
-.container {
-    width: 85%;
-    max-width: 900px;
-    margin: 30px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(255, 92, 157, 0.2);
-}
-
-/* ===== NAVIGASI ===== */
-nav {
-    background: #ff8fbd;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #fff0f6;
-}
-
-/* ===== TABEL ===== */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-th {
-    background: #ff8fbd;
-    color: white;
-    padding: 12px;
-}
-
-td {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ffd6e7;
-}
-
-tr:hover {
-    background: #fff0f6;
-}
-
-/* ===== FORM ===== */
-form {
-    background: #fff7fa;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-label {
-    display: block;
-    margin-top: 12px;
-    font-weight: bold;
-    color: #8b4565;
-}
-
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 2px solid #ffc1d9;
-    border-radius: 10px;
     box-sizing: border-box;
-    outline: none;
 }
 
-/* Saat kotak diklik */
-input:focus,
-select:focus,
-textarea:focus {
-    border-color: #ff5c9d;
-    box-shadow: 0 0 5px #ffc1d9;
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #ffdbea,
+        #fff4f9
+    );
 }
 
-/* ===== TOMBOL ===== */
-button {
-    background: #ff6fa8;
-    color: white;
-    border: none;
-    padding: 11px 20px;
-    margin-top: 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
+
+/* HALAMAN PERTAMA */
+
+.home {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
 }
 
-button:hover {
-    background: #ff5c9d;
-    transform: scale(1.05);
+
+/* FOTO PROFIL */
+
+.foto-profil {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid white;
+
+    box-shadow:
+        0 10px 30px rgba(255, 92, 157, 0.3);
+
+    transition: 0.3s;
 }
 
-/* ===== GAMBAR ===== */
-img {
-    max-width: 100%;
-    border-radius: 15px;
-    display: block;
-    margin: 15px auto;
+.foto-profil:hover {
+    transform: scale(1.04);
 }
 
-/* ===== FOOTER ===== */
-footer {
+
+/* BUTTON */
+
+.menu {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.button {
+    width: 100%;
+
+    padding: 16px;
+
     text-align: center;
-    background: #ff8fbd;
+
+    text-decoration: none;
+
     color: white;
-    padding: 15px;
-    margin-top: 30px;
+
+    background: #ff8fbd;
+
+    border-radius: 15px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 6px 15px rgba(255, 92, 157, 0.2);
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #ff5c9d;
+
+    transform: translateY(-3px);
+}
+
+
+/* HP */
+
+@media (max-width: 500px) {
+
+    .foto-profil {
+        width: 230px;
+        height: 230px;
+    }
+
+    .menu {
+        width: 80%;
+    }
+}
+
+/* ===== HIASAN LUCU ===== */
+
+.home {
+    position: relative;
+    overflow: hidden;
+}
+
+/* tulisan */
+.sapaan {
+    color: #d94f88;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+
+/* hiasan */
+.hiasan {
+    position: absolute;
+    font-size: 35px;
+    animation: goyang 2s infinite ease-in-out;
+}
+
+.hiasan1 {
+    top: 80px;
+    left: 15%;
+}
+
+.hiasan2 {
+    bottom: 100px;
+    right: 15%;
+    animation-delay: 0.5s;
+}
+
+.hiasan3 {
+    top: 30%;
+    right: 12%;
+    color: #ff8fbd;
+    font-size: 45px;
+    animation-delay: 1s;
+}
+
+/* animasi kecil */
+
+
+/* tombol lebih gemes */
+.button {
+    border: 3px solid #fff;
+    letter-spacing: 0.5px;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+/* foto lebih lucu */
+.foto-profil {
+    border: 9px solid white;
+    outline: 4px dashed #ffb5d0;
 }
