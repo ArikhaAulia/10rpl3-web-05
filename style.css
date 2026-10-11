@@ -103,8 +103,9 @@ body {
 @media screen and (max-width: 768px) {
 
     .foto-profil {
-        width: 230px;
-        height: 230px;
+        width: 100%;
+        max-width: 230px;
+        height: auto;
     }
 
     .menu {
