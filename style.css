@@ -199,4 +199,77 @@ body {
 .sosmed a:focus-visible {
     background-color: #0b2545;
     color: white;
+}/* Tampilan dasar */
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+/* Kotak utama */
+.home {
+    width: 100%;
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+/* Foto profil */
+.foto-profil {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Gambar sosial media */
+.sosmed img {
+    max-width: 32px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Khusus layar HP */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
+    .home {
+        width: 100%;
+        min-height: auto;
+        margin: 10px auto;
+        padding: 18px;
+        border-radius: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px;
+        padding: 12px;
+        margin: 10px 0;
+    }
+
+    .sosmed {
+        padding-left: 15px;
+    }
+
+    .sosmed a {
+        font-size: 14px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
