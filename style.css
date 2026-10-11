@@ -100,7 +100,7 @@ body {
 
 /* HP */
 
-@media (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
     .foto-profil {
         width: 230px;
