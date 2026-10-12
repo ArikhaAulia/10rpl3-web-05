@@ -144,7 +144,6 @@ body {
 .hiasan2 {
     bottom: 100px;
     right: 15%;
-    animation-delay: 0.5s;
 }
 
 .hiasan3 {
@@ -152,17 +151,9 @@ body {
     right: 12%;
     color: #ff8fbd;
     font-size: 45px;
-    animation-delay: 1s;
+    
 }
 
-@keyframes goyang {
-    0%, 100% {
-        transform: rotate(-8deg);
-    }
-    50% {
-        transform: rotate(8deg);
-    }
-}
 
 /* ===== TAMPILAN HP ===== */
 @media screen and (max-width: 600px) {
